@@ -1,0 +1,99 @@
+[debug] [2025-03-20T14:50:29.508Z] ----------------------------------------------------------------------
+[debug] [2025-03-20T14:50:29.510Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Shong\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting,firestore,database
+[debug] [2025-03-20T14:50:29.510Z] CLI Version:   13.34.0
+[debug] [2025-03-20T14:50:29.511Z] Platform:      win32
+[debug] [2025-03-20T14:50:29.511Z] Node Version:  v22.14.0
+[debug] [2025-03-20T14:50:29.511Z] Time:          Thu Mar 20 2025 16:50:29 GMT+0200 (שעון ישראל (חורף))
+[debug] [2025-03-20T14:50:29.511Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-20T14:50:29.652Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-20T14:50:29.652Z] > authorizing via signed-in user (shonguralnik@gmail.com)
+[debug] [2025-03-20T14:50:29.653Z] [iam] checking project irrigation-system-a3913 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2025-03-20T14:50:29.653Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:29.654Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:29.654Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/irrigation-system-a3913:testIamPermissions [none]
+[debug] [2025-03-20T14:50:29.654Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/irrigation-system-a3913:testIamPermissions x-goog-quota-user=projects/irrigation-system-a3913
+[debug] [2025-03-20T14:50:29.654Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/irrigation-system-a3913:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2025-03-20T14:50:31.407Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/irrigation-system-a3913:testIamPermissions 200
+[debug] [2025-03-20T14:50:31.407Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/irrigation-system-a3913:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2025-03-20T14:50:31.407Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:31.408Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:31.408Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/irrigation-system-a3913 [none]
+[debug] [2025-03-20T14:50:32.244Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/irrigation-system-a3913 200
+[debug] [2025-03-20T14:50:32.245Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/irrigation-system-a3913 {"projectId":"irrigation-system-a3913","projectNumber":"92270780500","displayName":"Irrigation system","name":"projects/irrigation-system-a3913","resources":{"hostingSite":"irrigation-system-a3913","realtimeDatabaseInstance":"irrigation-system-a3913-default-rtdb"},"state":"ACTIVE","etag":"1_6f0baf0e-e6b3-42e4-9cb6-6ba7714754b2"}
+[debug] [2025-03-20T14:50:32.245Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:32.246Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:32.246Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/irrigation-system-a3913 [none]
+[debug] [2025-03-20T14:50:32.624Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/irrigation-system-a3913 200
+[debug] [2025-03-20T14:50:32.624Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/irrigation-system-a3913 {"projectId":"irrigation-system-a3913","projectNumber":"92270780500","displayName":"Irrigation system","name":"projects/irrigation-system-a3913","resources":{"hostingSite":"irrigation-system-a3913","realtimeDatabaseInstance":"irrigation-system-a3913-default-rtdb"},"state":"ACTIVE","etag":"1_6f0baf0e-e6b3-42e4-9cb6-6ba7714754b2"}
+[info] 
+[info] === Deploying to 'irrigation-system-a3913'...
+[info] 
+[info] i  deploying database, firestore, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2025-03-20T14:50:32.631Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:32.631Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:32.632Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/irrigation-system-a3913/locations/-/instances/irrigation-system-a3913-default-rtdb [none]
+[debug] [2025-03-20T14:50:34.261Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/irrigation-system-a3913/locations/-/instances/irrigation-system-a3913-default-rtdb 200
+[debug] [2025-03-20T14:50:34.261Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/irrigation-system-a3913/locations/-/instances/irrigation-system-a3913-default-rtdb {"name":"projects/92270780500/locations/us-central1/instances/irrigation-system-a3913-default-rtdb","project":"projects/92270780500","databaseUrl":"https://irrigation-system-a3913-default-rtdb.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2025-03-20T14:50:34.262Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:34.262Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:34.262Z] >>> [apiv2][query] PUT https://irrigation-system-a3913-default-rtdb.firebaseio.com/.settings/rules.json dryRun=true
+[debug] [2025-03-20T14:50:34.263Z] >>> [apiv2][body] PUT https://irrigation-system-a3913-default-rtdb.firebaseio.com/.settings/rules.json "{\n  \"rules\": {\n    \".read\": true,  // 2024-12-25\n    \".write\": true,  // 2024-12-25\n  }\n}"
+[debug] [2025-03-20T14:50:34.875Z] <<< [apiv2][status] PUT https://irrigation-system-a3913-default-rtdb.firebaseio.com/.settings/rules.json 200
+[debug] [2025-03-20T14:50:34.875Z] <<< [apiv2][body] PUT https://irrigation-system-a3913-default-rtdb.firebaseio.com/.settings/rules.json {"status":"ok"}
+[info] +  database: rules syntax for database irrigation-system-a3913-default-rtdb is valid 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2025-03-20T14:50:34.880Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:34.880Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:34.880Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/irrigation-system-a3913:test [none]
+[debug] [2025-03-20T14:50:34.880Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/irrigation-system-a3913:test [omitted]
+[debug] [2025-03-20T14:50:36.923Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/irrigation-system-a3913:test 200
+[debug] [2025-03-20T14:50:36.923Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/irrigation-system-a3913:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2025-03-20T14:50:36.929Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:36.929Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:36.930Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/irrigation-system-a3913/versions [none]
+[debug] [2025-03-20T14:50:36.930Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/irrigation-system-a3913/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-03-20T14:50:38.549Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/irrigation-system-a3913/versions 200
+[debug] [2025-03-20T14:50:38.550Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/irrigation-system-a3913/versions {"name":"projects/92270780500/sites/irrigation-system-a3913/versions/8426d806094b163d","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-03-20T14:50:38.551Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:38.551Z] Checked if tokens are valid: true, expires at: 1742484127176
+[info] i  firestore: deploying indexes... 
+[debug] [2025-03-20T14:50:38.554Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:38.554Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:38.554Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/irrigation-system-a3913/releases pageSize=10&pageToken=
+[debug] [2025-03-20T14:50:38.555Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/irrigation-system-a3913/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2025-03-20T14:50:39.256Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/irrigation-system-a3913/releases 200
+[debug] [2025-03-20T14:50:39.256Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/irrigation-system-a3913/releases {"releases":[{"name":"projects/irrigation-system-a3913/releases/cloud.firestore","rulesetName":"projects/irrigation-system-a3913/rulesets/d60c80af-56a0-40a1-a0cb-b24d896c408d","createTime":"2025-01-30T18:12:37.292214Z","updateTime":"2025-01-30T18:12:37.292214Z"}]}
+[debug] [2025-03-20T14:50:39.257Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:39.257Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:39.257Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/irrigation-system-a3913/rulesets/d60c80af-56a0-40a1-a0cb-b24d896c408d [none]
+[debug] [2025-03-20T14:50:39.521Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/irrigation-system-a3913/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2025-03-20T14:50:39.521Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/irrigation-system-a3913/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2025-03-20T14:50:39.522Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:39.522Z] Checked if tokens are valid: true, expires at: 1742484127176
+[debug] [2025-03-20T14:50:39.522Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/irrigation-system-a3913/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-03-20T14:50:39.762Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/irrigation-system-a3913/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-03-20T14:50:39.763Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/irrigation-system-a3913/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/irrigation-system-a3913/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] +  firestore: deployed indexes in firestore.indexes.json successfully for (default) database 
+[debug] [2025-03-20T14:50:39.951Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/irrigation-system-a3913/rulesets/d60c80af-56a0-40a1-a0cb-b24d896c408d 200
+[debug] [2025-03-20T14:50:39.951Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/irrigation-system-a3913/rulesets/d60c80af-56a0-40a1-a0cb-b24d896c408d [omitted]
+[info] i  firestore: latest version of firestore.rules already up to date, skipping upload... 
+[info] i  hosting[irrigation-system-a3913]: beginning deploy... 
+[info] i  hosting[irrigation-system-a3913]: found 126243 files in . 
+[debug] [2025-03-20T14:50:51.956Z] [hosting] uploading with 200 concurrency
+[debug] [2025-03-20T14:50:51.957Z] [hosting] hash cache [] not populated
+[debug] [2025-03-20T14:50:51.993Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Shong\ntuser.dat.LOG2'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-03-20T14:50:51.994Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Shong\ntuser.dat.LOG1'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-03-20T14:50:51.995Z] Error: EBUSY: resource busy or locked, open 'C:\Users\Shong\NTUSER.DAT'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2025-03-20T14:50:51.998Z] Error: EISDIR: illegal operation on a directory, read
+[error] 
+[error] Error: An unexpected error has occurred.
